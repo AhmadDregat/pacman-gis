@@ -5,7 +5,7 @@
 	<classpathentry kind="src" path="OOP_EX2-Ex4/src"/>
 	<classpathentry kind="lib" path="json-simple-1.1.jar"/>
 	<classpathentry kind="lib" path="OOP_EX2-Ex4/sqlite-jdbc-3.23.1.jar"/>
-	<classpathentry kind="src" path="Pictures&amp;Icones"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="src" path="Pictures&amp;Icones"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

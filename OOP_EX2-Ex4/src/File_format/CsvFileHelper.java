@@ -9,7 +9,6 @@ public class CsvFileHelper {
 /**
  * Return a ResourcePath Of File source
  * @param fileName Destination of the Csv file to import
- * For exemple: "OOP_EX2-Ex4/data/WigleWifi_20171203085618.csv"
  * @return dossierPath of Destination
  */
     public static String getResourcePath(String fileName) {
@@ -20,7 +19,7 @@ public class CsvFileHelper {
 /**
  * 
  * @param fileName Destination of the Csv file to import
- * For exemple: "OOP_EX2-Ex4/data/WigleWifi_20171203085618.csv"
+ * 
  * @return File with the location of the csv file.
  */
    public static File getResource(String fileName) {
