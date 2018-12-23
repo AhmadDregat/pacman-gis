@@ -46,3 +46,4 @@ Coords:
   Example of the game:
   
   
+![whatsapp image 2018-12-23 at 22 21 44 2](https://user-images.githubusercontent.com/33615853/50387615-4ed20e80-0709-11e9-86df-31dd5255c559.jpeg)
