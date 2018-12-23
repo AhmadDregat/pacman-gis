@@ -74,7 +74,7 @@ public class MyFarme extends JFrame implements MouseListener
 
 
 		try {
-			myImage = ImageIO.read(new File(theMap.getMapDiractory()));
+			myImage = ImageIO.read(new File(theMap.getDiractroymap()));
 		}
 		catch (IOException e) 
 		{

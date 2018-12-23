@@ -1,6 +1,5 @@
 package GIS;
 
-<<<<<<< HEAD
 
 
 import java.io.File;
@@ -333,8 +332,3 @@ public class game {
 	} 
 
 }
-=======
-public class game {
-
-}
->>>>>>> refs/remotes/origin/master
