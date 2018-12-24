@@ -47,3 +47,7 @@ Coords:
   
   
 ![whatsapp image 2018-12-23 at 22 21 44 2](https://user-images.githubusercontent.com/33615853/50387615-4ed20e80-0709-11e9-86df-31dd5255c559.jpeg)
+
+/*******************************************************************************************************************************/
+![google gps](https://user-images.githubusercontent.com/33619392/50395920-54fad600-076f-11e9-9fe8-c4ea9e120306.png)
+![gui wuth 2 packmans](https://user-images.githubusercontent.com/33619392/50395921-54fad600-076f-11e9-87df-86a86ada49dd.jpeg)
