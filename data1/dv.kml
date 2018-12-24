@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document>
+<name> Points with TimeStamps</name>
+ <Style id="red">
+<IconStyle><Icon><href>http://maps.google.com/mapfiles/ms/icons/red-dot.png</href></Icon></IconStyle>
+</Style><Style id="Packman"><IconStyle><Icon><href>http://www.iconhot.com/icon/png/quiet/256/pac-man.png</href></Icon></IconStyle>
+</Style><Style id="Fruit"><IconStyle><Icon><href>http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c316.png</href></Icon></IconStyle></Style>
+
+    <Style id="check-hide-children">
+      <ListStyle>
+        <listItemType>checkHideChildren</listItemType>
+      </ListStyle>
+    </Style>
+    <styleUrl>#check-hide-children</styleUrl>
+<Folder><name>GAME PACKMAN</name>
+
+
+<Placemark>
+<name><![CDATA[ PACKMAN START 0]]></name>
+<description><![CDATA[Type: <b> PACKMAN  </b><br/>id: <b> PACKMAN Start Number0 </b><br/>Lat: <b>32.10393700311526 </b><br/>Lon: <b>35.20924620516399 </b><br/>Speed/Weight: <b>1.0 </b><br/>Radius: <b>1.0 </b><br/>]]></description>
+<TimeStamp>
+        <when>2018-12-24T00:30:59.130</when>
+      </TimeStamp><styleUrl>#Packman</styleUrl><Point>
+<coordinates>35.20924620516399,32.10393700311526</coordinates></Point>
+</Placemark>
+
+<Placemark>
+<name><![CDATA[ FRUIT 0,Pac:0]]></name>
+ <description><![CDATA[Type: <b> FRUIT  </b><br/>id: <b> FRUIT Number :0,Pac:0 </b><br/>Lat: <b>32.104220394081 </b><br/>Lon: <b>35.208571666434054 </b><br/>Speed/Weight: <b>1 </b><br/>]]></description>
+<TimeStamp>
+        <when>2018-12-24T00:35:59.130</when>
+      </TimeStamp><styleUrl>#Fruit</styleUrl><Point>
+<coordinates>35.208571666434054,32.104220394081</coordinates></Point>
+</Placemark>
+
+<Placemark>
+<name><![CDATA[ PACKMAN Moving 0, 0]]></name>
+<description><![CDATA[Type: <b> PACKMAN  </b><br/>id: <b> PACKMAN Moving 0, 0</b><br/>Lat: <b>32.10393700311526 </b><br/>Lon: <b>35.20924620516399 </b><br/>Speed/Weight: <b>1.0 </b><br/>Radius: <b>1.0 </b><br/>]]></description>
+<TimeStamp>
+        <when>2018-12-24T00:45:59.130</when>
+      </TimeStamp><styleUrl>#Packman</styleUrl><Point>
+<coordinates>35.208571666434054,32.104220394081</coordinates></Point>
+</Placemark>
+
+<Placemark>
+<name><![CDATA[ FRUIT 1,Pac:0]]></name>
+ <description><![CDATA[Type: <b> FRUIT  </b><br/>id: <b> FRUIT Number :1,Pac:0 </b><br/>Lat: <b>32.10376817445483 </b><br/>Lon: <b>35.20845712212142 </b><br/>Speed/Weight: <b>1 </b><br/>]]></description>
+<TimeStamp>
+        <when>2018-12-24T00:40:59.130</when>
+      </TimeStamp><styleUrl>#Fruit</styleUrl><Point>
+<coordinates>35.20845712212142,32.10376817445483</coordinates></Point>
+</Placemark>
+
+<Placemark>
+<name><![CDATA[ PACKMAN Moving 0, 1]]></name>
+<description><![CDATA[Type: <b> PACKMAN  </b><br/>id: <b> PACKMAN Moving 0, 1</b><br/>Lat: <b>32.10393700311526 </b><br/>Lon: <b>35.20924620516399 </b><br/>Speed/Weight: <b>1.0 </b><br/>Radius: <b>1.0 </b><br/>]]></description>
+<TimeStamp>
+        <when>2018-12-24T00:50:59.130</when>
+      </TimeStamp><styleUrl>#Packman</styleUrl><Point>
+<coordinates>35.20845712212142,32.10376817445483</coordinates></Point>
+</Placemark>
+
+<Placemark>
+<name><![CDATA[ FRUIT 2,Pac:0]]></name>
+ <description><![CDATA[Type: <b> FRUIT  </b><br/>id: <b> FRUIT Number :2,Pac:0 </b><br/>Lat: <b>32.10316521495327 </b><br/>Lon: <b>35.20797349057921 </b><br/>Speed/Weight: <b>1 </b><br/>]]></description>
+<TimeStamp>
+        <when>2018-12-24T00:45:59.130</when>
+      </TimeStamp><styleUrl>#Fruit</styleUrl><Point>
+<coordinates>35.20797349057921,32.10316521495327</coordinates></Point>
+</Placemark>
+
+<Placemark>
+<name><![CDATA[ PACKMAN Moving 0, 2]]></name>
+<description><![CDATA[Type: <b> PACKMAN  </b><br/>id: <b> PACKMAN Moving 0, 2</b><br/>Lat: <b>32.10393700311526 </b><br/>Lon: <b>35.20924620516399 </b><br/>Speed/Weight: <b>1.0 </b><br/>Radius: <b>1.0 </b><br/>]]></description>
+<TimeStamp>
+        <when>2018-12-24T00:55:59.130</when>
+      </TimeStamp><styleUrl>#Packman</styleUrl><Point>
+<coordinates>35.20797349057921,32.10316521495327</coordinates></Point>
+</Placemark>
+
+<Placemark>
+<name><![CDATA[ FRUIT 3,Pac:0]]></name>
+ <description><![CDATA[Type: <b> FRUIT  </b><br/>id: <b> FRUIT Number :3,Pac:0 </b><br/>Lat: <b>32.1039490623053 </b><br/>Lon: <b>35.207668039078854 </b><br/>Speed/Weight: <b>1 </b><br/>]]></description>
+<TimeStamp>
+        <when>2018-12-24T00:50:59.130</when>
+      </TimeStamp><styleUrl>#Fruit</styleUrl><Point>
+<coordinates>35.207668039078854,32.1039490623053</coordinates></Point>
+</Placemark>
+
+<Placemark>
+<name><![CDATA[ PACKMAN Moving 0, 3]]></name>
+<description><![CDATA[Type: <b> PACKMAN  </b><br/>id: <b> PACKMAN Moving 0, 3</b><br/>Lat: <b>32.10393700311526 </b><br/>Lon: <b>35.20924620516399 </b><br/>Speed/Weight: <b>1.0 </b><br/>Radius: <b>1.0 </b><br/>]]></description>
+<TimeStamp>
+        <when>2018-12-24T01:00:59.130</when>
+      </TimeStamp><styleUrl>#Packman</styleUrl><Point>
+<coordinates>35.207668039078854,32.1039490623053</coordinates></Point>
+</Placemark>
+
+<Placemark>
+<name><![CDATA[ FRUIT 4,Pac:0]]></name>
+ <description><![CDATA[Type: <b> FRUIT  </b><br/>id: <b> FRUIT Number :4,Pac:0 </b><br/>Lat: <b>32.10463643613707 </b><br/>Lon: <b>35.20708895394278 </b><br/>Speed/Weight: <b>1 </b><br/>]]></description>
+<TimeStamp>
+        <when>2018-12-24T00:55:59.130</when>
+      </TimeStamp><styleUrl>#Fruit</styleUrl><Point>
+<coordinates>35.20708895394278,32.10463643613707</coordinates></Point>
+</Placemark>
+
+<Placemark>
+<name><![CDATA[ PACKMAN Moving 0, 4]]></name>
+<description><![CDATA[Type: <b> PACKMAN  </b><br/>id: <b> PACKMAN Moving 0, 4</b><br/>Lat: <b>32.10393700311526 </b><br/>Lon: <b>35.20924620516399 </b><br/>Speed/Weight: <b>1.0 </b><br/>Radius: <b>1.0 </b><br/>]]></description>
+<TimeStamp>
+        <when>2018-12-24T06:30:59.130</when>
+      </TimeStamp><styleUrl>#Packman</styleUrl><Point>
+<coordinates>35.20708895394278,32.10463643613707</coordinates></Point>
+</Placemark>
+
+</Folder>
+</Document>
+</kml>

@@ -55,10 +55,10 @@ public class MyFarme extends JFrame implements MouseListener
 	public Map theMap = new Map();
 	public  ArrayList<Packman> Packman_arr = new ArrayList<>();
 	public  ArrayList<Fruit> Fruits_arr = new ArrayList<>();
-	private game mygame=new game(Packman_arr, Fruits_arr);
-	private int isGamer=0;// if is Gamer==1 --> Fruit :::: if is Gamer == -1 --> Packman 
 	public boolean Start_game=false;
 	public boolean drwaline = false;
+	private int isGamer=0;// if is Gamer==1 --> Fruit :::: if is Gamer == -1 --> Packman 
+	private game mygame=new game(Packman_arr, Fruits_arr);
 	public ArrayList<Packman> ArrayTemp=new ArrayList<>();
 	path TheCloserPackman;
 
@@ -116,25 +116,6 @@ public class MyFarme extends JFrame implements MouseListener
 		Add.add(Item_Packman);
 		Add.add(item_Fruit);
 
-//		Menu SetMenu = new Menu("Set"); 
-//
-//		MenuItem setraduisAll = new MenuItem("Radius All");
-//		MenuItem setradius2Pack = new MenuItem("Radius To Packman");
-//		MenuItem setSpeedAll = new MenuItem("Speed All");
-//		MenuItem setSpeed2Pack = new MenuItem("Speed To Packman");
-//		MenuItem setWeightAll= new MenuItem("Weight All");
-//		MenuItem setWeight2Friut= new MenuItem("Weight to Friut");
-//
-//
-//		SetMenu.add(setraduisAll);
-//		SetMenu.add(setradius2Pack);
-//		SetMenu.add(setSpeedAll);
-//		SetMenu.add(setSpeed2Pack);
-//		SetMenu.add(setWeightAll);
-//		SetMenu.add(setWeight2Friut);
-//
-//
-//		menuBarOption.add(SetMenu);
 
 
 		Menu Add_import=new Menu ("Import");
@@ -223,80 +204,6 @@ public class MyFarme extends JFrame implements MouseListener
 			}
 		});
 
-//		setraduisAll.addActionListener(new ActionListener() {
-//			@Override
-//			public void actionPerformed(ActionEvent e) {
-//				if (mygame.Packmanarr.size() > 0) {
-//					String radius= JOptionPane.showInputDialog("Please input the Radius for all the Packmans: ");
-//					double input_radius = Double.parseDouble(radius);
-//					for (int i = 0; i < mygame.Packmanarr.size(); i++) {
-//						mygame.Packmanarr.get(i).setred(input_radius);
-//					}
-//				} else {
-//					JOptionPane.showMessageDialog(null,"EROR: There is no Packmans in the Game");
-//
-//				}
-//
-//			}
-//		});
-//		setradius2Pack.addActionListener(new ActionListener() {
-//			@Override
-//			public void actionPerformed(ActionEvent e) {
-//				if(mygame.Packmanarr.size() > 0) {
-//					String i = JOptionPane.showInputDialog("Please input which packman you want to change (starting from 0)");
-//					int numberPack = Integer.parseInt(i);
-//					if(numberPack > mygame.Packmanarr.size()) {
-//						JOptionPane.showMessageDialog(null,"EROR: Cant find this Packman");
-//
-//					}else {
-//						String radius= JOptionPane.showInputDialog("Please input the Radius for this Packman: ");
-//						double input_radius = Double.parseDouble(radius);
-//						mygame.Packmanarr.get(numberPack).setred(input_radius);	
-//					}
-//				}else {
-//					JOptionPane.showMessageDialog(null,"EROR: There is no Packmans in the Game");
-//
-//				}
-//			}
-//		});
-//
-//
-//		setSpeed2Pack.addActionListener(new ActionListener() {
-//			@Override
-//			public void actionPerformed(ActionEvent e) {
-//				if(mygame.Packmanarr.size() > 0) {
-//					String i = JOptionPane.showInputDialog("Please input which packman you want to change (starting from 0)");
-//					int numberPack = Integer.parseInt(i);
-//					if(numberPack > mygame.Packmanarr.size()) {
-//						JOptionPane.showMessageDialog(null,"EROR: Cant find this Packman");
-//
-//					}else {
-//						String Speed= JOptionPane.showInputDialog("Please input the Speed for this Packman: ");
-//						double input_Speed = Double.parseDouble(Speed);
-//						mygame.Packmanarr.get(numberPack).setSpeed(input_Speed);	
-//					}
-//				}else {
-//					JOptionPane.showMessageDialog(null,"EROR: There is no Packmans in the Game");
-//
-//				}
-//			}
-//		});
-//		setSpeedAll.addActionListener(new ActionListener() {
-//			@Override
-//			public void actionPerformed(ActionEvent e) {
-//				if (mygame.Packmanarr.size() > 0) {
-//					String speed= JOptionPane.showInputDialog("Please input the Speed for all the Packmans: ");
-//					double input_speed = Double.parseDouble(speed);
-//					for (int i = 0; i < mygame.Packmanarr.size(); i++) {
-//						mygame.Packmanarr.get(i).setSpeed(input_speed);
-//					}
-//				} else {
-//					JOptionPane.showMessageDialog(null,"EROR: There is no Packmans in the Game");
-//
-//				}
-//
-//			}
-//		});
 
 
 

@@ -1,6 +1,7 @@
 package Algorithm;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 import Coords.Map;
 import GIS.Fruit;
@@ -47,8 +48,8 @@ public class ShortestPathAlgo {
 		ArrayList<Fruit> Tempfruits = this.fruits;
 
 		Packman tempPackman = new Packman(oriPackman.getP(),oriPackman.getSpeed(),oriPackman.getred());
-		path Dis = disAlgo(tempPackman, Tempfruits);
-		path p = calFastDisOnePack(tempPackman, Tempfruits);
+		path Dis = distanceAlgo(tempPackman, Tempfruits);
+		path p = FastOnePack(tempPackman, Tempfruits);
 
 		oriPackman.getpath().setpath1(Dis.getCpath());	
 		double timeFor1 = Dis.CalPathTime(oriPackman);
@@ -80,7 +81,7 @@ public class ShortestPathAlgo {
 	 * @param myFurits Arraylist in Fruits 
 	 * @return the Path the most suitable
 	 */
-	public path calFastDisOnePack (Packman packman, ArrayList<Fruit> myFurits) {
+	public path FastOnePack (Packman packman, ArrayList<Fruit> myFurits) {
 
 		if (myFurits.isEmpty()) {
 			return packman.getpath();
@@ -90,9 +91,9 @@ public class ShortestPathAlgo {
 		Fruit theCloserTemp = TheCloserFurit(packman,myFurits); // the closer furit to packman 
 		packman.getpath().getCpath().add(theCloserTemp);
 		packman.setPackLocation(theCloserTemp.getfruit());
-		myFurits.remove(getIndexFurit(theCloserTemp, myFurits));
+		myFurits.remove(Index(theCloserTemp, myFurits));
 
-		return calFastDisOnePack(packman,myFurits);
+		return FastOnePack(packman,myFurits);
 
 
 	}
@@ -102,7 +103,7 @@ public class ShortestPathAlgo {
 	 * @param myFurits Fruit list
 	 * @return Path with distance add
 	 */
-	public path disAlgo(Packman packman, ArrayList<Fruit> myFurits) {
+	public path distanceAlgo(Packman packman, ArrayList<Fruit> myFurits) {
 
 		ArrayList<Double> SortPathByDis = new ArrayList<>();
 		path ans = new path();
@@ -152,7 +153,7 @@ public class ShortestPathAlgo {
 			Packman p = new Packman(myPackmens.get(i).getP(),myPackmens.get(i).getSpeed(), myPackmens.get(i).getred());
 			ans.add(p);
 		}
-		myPackmens = Algomulti(myPackmens,myFurits);
+		myPackmens =multiAlgo(myPackmens,myFurits);
 
 		for (int i = 0; i < myPackmens.size(); i++) {
 			myPackmens.get(i).setPackLocation(ans.get(i).getP());
@@ -167,7 +168,7 @@ public class ShortestPathAlgo {
 
 		for (int i = 0; i < tempArray.size(); i++) {
 
-			ptemp = disAlgo(tempArray.get(i),tempArray.get(i).getpath().getCpath());
+			ptemp = distanceAlgo(tempArray.get(i),tempArray.get(i).getpath().getCpath());
 
 			System.out.println("temp array: "+ptemp.getCpath());
 		}
@@ -183,7 +184,7 @@ public class ShortestPathAlgo {
 				longestTime = temp;
 			}
 		}
-		System.out.println("the Total time is: "+longestTime);
+		System.out.println("the Total time : "+longestTime);
 		return myPackmens;
 	}
 
@@ -195,7 +196,7 @@ public class ShortestPathAlgo {
 	 * @return Pacman's ArrayList to which will be added to each Pacman a path of the course he will perform
 	 */
 
-	private ArrayList<Packman> Algomulti (ArrayList<Packman> myPackmans , ArrayList<Fruit>myFurits) {
+	private ArrayList<Packman> multiAlgo (ArrayList<Packman> myPackmans , ArrayList<Fruit>myFurits) {
 		path myPath = new path();
 		if(myFurits.isEmpty()) {
 			return myPackmans;
@@ -226,9 +227,9 @@ public class ShortestPathAlgo {
 		}
 		thePackman.getpath().getCpath().add(theCloserFurit);
 		thePackman.setPackLocation(theCloserFurit.getfruit());
-		myFurits.remove(getIndexFurit(theCloserFurit, myFurits));
+		myFurits.remove(Index(theCloserFurit, myFurits));
 
-		return Algomulti(myPackmans ,myFurits);
+		return multiAlgo(myPackmans ,myFurits);
 
 	}
 
@@ -239,7 +240,7 @@ public class ShortestPathAlgo {
 	 * @return The double time of the fastest route
 	 */
 
-	double FastSpeedToFriut(Packman packman ,ArrayList<Fruit> myFurits ) {
+	double FastSpeedFriut(Packman packman ,ArrayList<Fruit> myFurits ) {
 		path p = new path();
 		double fastTime = p.Time2Points(packman, myFurits.get(0));
 		double tempTime = 0;
@@ -287,11 +288,11 @@ public class ShortestPathAlgo {
 	 * @param myFurits ArrayList contain The "fruit"
 	 * @return Index of Fruit (if no found return -1)
 	 */
-	public int getIndexFurit(Fruit furit , ArrayList<Fruit> myFurits) {
+	public int Index(Fruit furit , ArrayList<Fruit> myFurits) {
 
 		for (int i = 0; i < myFurits.size(); i++) {
 
-			if(furit.equals(myFurits.get(i))) {
+			if((myFurits.get(i)==furit)) {
 				return i;
 			}
 
@@ -300,5 +301,20 @@ public class ShortestPathAlgo {
 	}
 
 
+	public class dist_Comperator implements Comparator<Double> {
 
+		/**
+		 * comparator who knows how to compare two distance
+		 */
+		public int compare(Double d1, Double d2)   {
+			// TODO Auto-generated method stub
+			if (d1 < d2) {
+				return -1;
+			}
+			if(d1 > d2) {
+				return 1;
+			}
+			return 0;
+		}
+	}
 }
