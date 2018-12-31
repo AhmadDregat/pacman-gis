@@ -112,7 +112,7 @@ public class Map {
 	 * @return
 	 */
 	public Point3D coord2pixel(Point3D gps_point) {	
-	return new Point3D( (double)((gps_point.x()-rotation_left_up.x())/y),	(double)((gps_point.y()-rotation_left_up.y())/x));		
+	return new Point3D( (double)((gps_point.y()-rotation_left_up.y())/x),	(double)((gps_point.x()-rotation_left_up.x())/y));		
 	}
 
 	/**
@@ -122,7 +122,7 @@ public class Map {
 	 * @return
 	 */
 	public Point3D pixel2coord(double x, double y) {	
-		return new Point3D(	(double)( y * this.y+rotation_left_up.x()),(double)(x * this.x+rotation_left_up.y()));
+		return new Point3D(	(double)(x * this.x+rotation_left_up.y()),(double)( y * this.y+rotation_left_up.x()));
 	}
 	
 	/**
